@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.jlowery319.timerdemo.MainActivity">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timerSeekBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="0:30"
+        android:textSize="50sp"
+        android:layout_below="@+id/timerSeekBar"
+        android:layout_alignRight="@+id/controlButton"
+        android:layout_alignEnd="@+id/controlButton" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/hourglass"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/timerTextView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/controlButton"
+        android:text="Start"
+        android:onClick="controlTimer"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
